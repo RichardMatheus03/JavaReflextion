@@ -1,0 +1,9 @@
+package com.seuprojeto.anotations;
+
+import java.lang.annotation.*;
+
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+public @interface Processar {
+
+}

@@ -1,11 +1,11 @@
 package com.seuprojeto.estruturas;
 
-
 /**
- * A representação simplificada do TAD LinkedList para este projeto
- * Por enquanto foi adicionado apenas o método add que é o que será usado
+ * A representação simplificada do TAD LinkedList para este projeto Por enquanto
+ * foi adicionado apenas o método add que é o que será usado
  */
 public class LinkedList<T> {
+
     Node<T> head;
 
     public void add(T data) {
@@ -28,5 +28,13 @@ public class LinkedList<T> {
             current = current.next;
         }
         System.out.println("null");
+    }
+
+    public Node<T> getHead() {
+        return head;
+    }
+
+    public void setHead(Node<T> head) {
+        this.head = head;
     }
 }

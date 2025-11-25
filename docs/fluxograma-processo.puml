@@ -1,0 +1,52 @@
+@startuml
+start
+:Iniciar execução de `Main.main`;
+
+'======================
+' LEITURA DO ARQUIVO
+'======================
+:Carregar arquivo "dados.txt";
+
+if (Arquivo lido com sucesso?) then (Sim)
+    repeat
+        :Ler próxima linha;
+        if (Linha contém inteiro válido?) then (Sim)
+            :Converter para int;
+            :Inserir na LinkedList;
+        else (Não)
+            :Imprimir "Valor inválido ignorado";
+        endif
+    repeat while (Ainda existem linhas?)
+else (Não)
+    :Imprimir "Erro ao ler arquivo";
+    stop
+endif
+
+'======================
+' PROCESSAMENTO
+'======================
+:Percorrer todos os nós da LinkedList;
+
+repeat
+    :Obter valor atual;
+    :Chamar rodarProcessos(valor);
+
+    if (Classe Operacoes possui @Processar?) then (Sim)
+        :Obter métodos de Operacoes via reflexão;
+
+        repeat
+            if (Método possui @Acao?) then (Sim)
+                :Criar instância de Operacoes;
+                :Invocar método passando o valor;
+            else (Não)
+                :Ignorar método;
+            endif
+        repeat while (Existem mais métodos?)
+    else (Não)
+        :Imprimir "@Processar ausente em Operacoes";
+    endif
+
+repeat while (Existem mais nós?)
+:Programa imprime resultados das operações;
+stop
+@enduml

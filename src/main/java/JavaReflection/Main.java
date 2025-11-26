@@ -1,4 +1,4 @@
-package com.seuprojeto;
+package JavaReflection;
 
 import java.io.IOException;
 import java.lang.reflect.InvocationTargetException;
@@ -7,9 +7,9 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 
-import com.seuprojeto.estruturas.*;
-import com.seuprojeto.anotations.*;
-import com.seuprojeto.processors.*;
+import JavaReflection.estruturas.*;
+import JavaReflection.anotations.*;
+import JavaReflection.processors.*;
 
 public class Main {
 

@@ -1,4 +1,4 @@
-package com.seuprojeto.estruturas;
+package JavaReflection.estruturas;
 
 public class Node<T> {
 

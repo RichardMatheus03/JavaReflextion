@@ -1,4 +1,4 @@
-package com.seuprojeto.estruturas;
+package JavaReflection.estruturas;
 
 /**
  * A representação simplificada do TAD LinkedList para este projeto Por enquanto

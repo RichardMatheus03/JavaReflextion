@@ -1,6 +1,6 @@
-package com.seuprojeto.processors;
+package JavaReflection.processors;
 
-import com.seuprojeto.anotations.*;
+import JavaReflection.anotations.*;
 
 @Processar
 public class Operacoes {

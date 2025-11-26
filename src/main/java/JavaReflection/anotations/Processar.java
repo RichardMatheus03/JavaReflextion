@@ -1,4 +1,4 @@
-package com.seuprojeto.anotations;
+package JavaReflection.anotations;
 
 import java.lang.annotation.*;
 
